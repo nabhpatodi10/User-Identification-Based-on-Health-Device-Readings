@@ -71,3 +71,5 @@ def glucose_ensemble(blood_glucose: float) -> str:
         ensemble_prediction = max(predictions, key=predictions.get)
     data = mappings[mappings['number'] == ensemble_prediction]
     return data['name'].values[0]
+
+print(bp_ensemble(80, 120))
